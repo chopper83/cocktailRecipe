@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="/styles/main1.css">
+</head>
+<body>
+    <h1>Results</h1>
+    <div class="container">
+       <%  if(locals.drinks){  %>
+      <%    for(let i=0;i<drinks.length;i++){ %>
+      
+    <div class="part">
+    
+    <a href="/display?name=<%= drinks[i].name %>">
+      <img src="<%= drinks[i].thumb %>">
+      <h6><%= drinks[i].name %> </h6>
+    </a>
+   
+    </div>
+<%  } %>
+<%  } else{  %>
+    <p>No Results Found</p>
+
+ <% }  %>
+
+    </div>
+    
+</body>
+</html>

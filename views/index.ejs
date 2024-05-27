@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CocktailRecipe</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <div class="container">
+       
+            <form class="search-bar" action="/search" method="GET">
+                <input type="text" name="query" placeholder="Search for a drink...">
+                <button type="submit">Search</button>
+            </form>
+     <div class="head">
+        <h1>Welcome To Random Cocktail Recipe</h1>
+        <h4><%= Name %>(Drink Name)</h4>
+        <h5><%= Category %>(Type)</h5>
+        <img class=pic src="<%= Thumb %>">
+        <div class="instruction">
+            <h5 class="ins">Instructions</h5>
+            <p><%= ins %></p>
+        </div>
+
+     </div>
+
+    </div>
+    
+</body>
+</html>
