@@ -1,8 +1,8 @@
 # cocktailRecipe
 Website to learn about cocktail recipes
 
-run the command npm i on the terminal to install the node modules
+type node index.js on the terminal to run the program 
 
-type node index.js to run the program
+once its running, open the browser and go to http://localhost:3000/ to see the website
 
-finally open the browser and go to http://localhost:3000/ to see the website
+refresh the website to see a random cocktail recipe or search for a drink 
